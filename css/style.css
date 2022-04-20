@@ -1,0 +1,25 @@
+
+
+
+.animation{
+	width: 200px;
+	height: 150px;
+	position: relative;
+	background: hotpink;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	animation-name: one;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-duration: alternate-reveres;
+}
+
+@keyframes one{
+	0% {background: green; color: yellow; font-size: 15px; left: 0px; top: 0px;}
+    25% {background-color: blue; color: red; font-size: 40px; left: 300px; top: 0px;}
+    50% {background-color: red; color: skyblue; font-size: 45px; left: 300px; top: 300px; transform: rotate(360deg); }
+    75% {background-color: purple; color: blue;font-size: 15px; left: 0px; top : 300px;}
+    100% {background-color: yellow; color: red; font-size: 40px; left: 0px; top: 0px;}	
+}
